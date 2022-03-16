@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import './index.css';
 import App from './App';
+import Table from './table';
+import Counter from './counter';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route path="table" element={<Table />} />
+        <Route path="counter" element={<Counter/>} />
+      </Route>
+    </Routes>
+</BrowserRouter>,
   document.getElementById('root')
 );
 
