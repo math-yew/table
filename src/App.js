@@ -11,19 +11,8 @@ function App() {
     <div className="App">
       <header className="App-header">
       <Nav />
-      <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit this stuff and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Outlet />
+      <Outlet />
+    {/*   */}
       </header>
     </div>
   );
